@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+  <title>Contact Form</title>
+</head>
+
+<body>
+  <div class="banner">
+    <div id="banner-alert" class="alert-success hidden">
+      <span class="icon">✔</span>
+      <span class="banner-message"></span>
+      <button class="close">&times;</button>
+    </div>
+  </div>
+  <div class="container">
+    <form class="contact-form">
+      <div>
+        <label for="firstName"></label>
+        <input type="text" name="firstName" id="firstName" class="firstName" placeholder="First Name" />
+      </div>
+      <div>
+        <label for="lastName"></label>
+        <input type="text" name="lastName" id="lastName" class="lastName" placeholder="Last Name" />
+      </div>
+      <h5 class="gender">Gender:</h5>
+      <div class="select-gender">
+        <div>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">M</label>
+        </div>
+
+        <div>
+          <input type="radio" id="female" name="gender" value="female" checked />
+          <label for="female">F</label>
+        </div>
+      </div>
+      <div>
+        <label for="message"></label>
+        <textarea name="message" id="message" class="message" rows="6" placeholder="Your message here.."></textarea>
+      </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+    <div class="img">
+      <img src="img/contact.png" alt="img" />
+    </div>
+  </div>
+</body>
+
+</html>
