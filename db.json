@@ -26,5 +26,20 @@
     ],
     "profile": {
         "name": "typicode"
-    }
+    },
+    "payments": [
+        {
+            "date": "2026-02-07",
+            "amount": 300,
+            "categoryId": 1,
+            "userId":1
+        },
+        {
+            "date": "2026-03-07",
+            "amount": 500,
+            "categoryId": 2,
+            "userId":2
+
+        }
+    ]
 }
