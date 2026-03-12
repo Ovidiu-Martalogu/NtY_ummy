@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style-expenses.css">
+  <script type="module" src="/assets/js/expenses.js"></script>
+    <title>Expenses</title>
+    
+</head>
+
+<body>
+    <h1>Expenses</h1>
+
+    <!-- Formular adăugare / editare -->
+    <form id="expense-form">
+        <input type="hidden" id="expense-id">
+        <input type="text" id="description" placeholder="Descriere cheltuială" required>
+        <input type="number" id="amount" placeholder="Suma (RON)" required min="0.01" step="0.01">
+        <button type="submit">Adaugă / Salvează</button>
+        <button type="button" id="cancel-edit" style="display:none;">Anulează</button>
+    </form>
+
+    <!-- Filtrare -->
+    <div class="filter-section">
+        <input type="text" id="search-text" placeholder="Caută după descriere">
+        <input type="number" id="min-amount" placeholder="Sumă minimă">
+        <input type="number" id="max-amount" placeholder="Sumă maximă">
+        <button type="button" id="apply-filter">Aplică filtru</button>
+        <button type="button" id="reset-filter">Resetează filtru</button>
+    </div>
+
+    <table id="expense-table">
+        <thead>
+            <tr>
+                <th>Descriere</th>
+                <th>Sumă (RON)</th>
+                <th>Acțiune</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+            <tr>
+                <td>Total:</td>
+                <td id="total">0.00</td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script>
+        
+    </script>
+</body>
+
+</html>

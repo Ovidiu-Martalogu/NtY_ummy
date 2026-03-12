@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="/assets/js/test.js"></script>
+    <link rel="stylesheet" href="/assets/css/style-test.css">
     <title>Document</title>
+
 </head>
+
 <body>
-    <h1>Test JS</h1>
+    <!-- <h1>Test JS</h1>
+    <div id="payments"></div> -->
+    <!-- <h1>Payments</h1>
+    <table class="table" >
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>User</th>
+            </tr>
+        </thead>
+
+        <tbody id="paymentsTable"></tbody>
+
+    </table> -->
+
+
+    <h2>Add Payment</h2>
+
+    <form id="paymentForm">
+        <input type="date" id="date" required>
+        <input type="number" id="amount" placeholder="Amount" required>
+        <input type="number" id="categoryId" placeholder="CategoryId" required>
+        <input type="number" id="userId" placeholder="UserId" required>
+
+        <button type="submit">Add</button>
+    </form>
+
+
+    <h2>Payments</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>User</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody id="paymentsTable"></tbody>
+        <button class="delete" data-id="${p.id}">Delete</button>
+
+    </table>
+
 </body>
+
 </html>

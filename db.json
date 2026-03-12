@@ -1,45 +1,49 @@
 {
-    "$schema": "./node_modules/json-server/schema.json",
-    "posts": [
-        {
-            "id": "1",
-            "title": "a title",
-            "views": 100
-        },
-        {
-            "id": "2",
-            "title": "another title",
-            "views": 200
-        }
-    ],
-    "comments": [
-        {
-            "id": "1",
-            "text": "a comment about post 1",
-            "postId": "1"
-        },
-        {
-            "id": "2",
-            "text": "another comment about post 1",
-            "postId": "1"
-        }
-    ],
-    "profile": {
-        "name": "typicode"
+  "$schema": "./node_modules/json-server/schema.json",
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
     },
-    "payments": [
-        {
-            "date": "2026-02-07",
-            "amount": 300,
-            "categoryId": 1,
-            "userId":1
-        },
-        {
-            "date": "2026-03-07",
-            "amount": 500,
-            "categoryId": 2,
-            "userId":2
-
-        }
-    ]
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "payments": [
+    {
+      "id": 1,
+      "date": "2026-02-07",
+      "amount": 300,
+      "categoryId": 1,
+      "userId": 1
+    }
+  ],
+  "users": [
+    {
+      "email": "qvidiu123456@gmail.com",
+      "password": "$2a$10$REyf/C1lBF0Ed98BgC/7suqX3Cw0913d8SOtgRUjqfr0e8ExODS86",
+      "firstName": "Natalia",
+      "lastName": "Maria",
+      "id": 1
+    }
+  ],
+  "expenses": []
 }
